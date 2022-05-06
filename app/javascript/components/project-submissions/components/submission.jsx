@@ -34,13 +34,8 @@ const Submission = forwardRef(({
   const livePreview = submission.live_preview_url.length > 0;
 
   return (
-<<<<<<< HEAD
-    <div className="submissions__item" ref={ref} data-test-id="submission-item">
-      <div className="submissions__left-container">
-=======
     <div className={submissionItemClassnames} ref={ref} data-test-id="submission-item">
       <div className="flex items-center mb-4 md:mb-0">
->>>>>>> 7d4aec5c (Move submission styles inside React component)
         <Like submission={submission} handleLikeToggle={handleLikeToggle} />
         <p className="submissions__submission-title">
           <SubmissionTitle
@@ -77,11 +72,7 @@ const Submission = forwardRef(({
         {isCurrentUsersSubmission
           ? (
             <div
-<<<<<<< HEAD
-              className="submissions__button--edit"
-=======
               className={`${submissionIconClassname} text-gray-500 hover:text-black`}
->>>>>>> 7d4aec5c (Move submission styles inside React component)
               onMouseDown={toggleShowEditModal}
               role="button"
               tabIndex={0}
@@ -91,11 +82,7 @@ const Submission = forwardRef(({
           )
           : (
             <button
-<<<<<<< HEAD
-              className="link-button submissions__flag hint--top"
-=======
               className={`${submissionIconClassnames} text-gray-300 hint--top`}
->>>>>>> 7d4aec5c (Move submission styles inside React component)
               aria-label="Report submission"
               type="button"
               data-test-id="flag-btn"
