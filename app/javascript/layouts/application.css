@@ -4,5 +4,9 @@
 @import "tailwindcss/utilities";
 
 @import './layout.css';
+<<<<<<< HEAD
+=======
+@import './toggle.css';
+>>>>>>> 7d4aec5c (Move submission styles inside React component)
 @import './typography.css';
 @import './buttons.css';
