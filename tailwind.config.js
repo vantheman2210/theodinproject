@@ -61,9 +61,6 @@ module.exports = {
       "app/assets/images/icons/*svg",
     ],
   },
-  variants: {
-    extend: {},
-  },
   corePlugins: {
     container: false,
   },
