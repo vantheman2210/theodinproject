@@ -93,15 +93,12 @@ const EditForm = ({
           </>
           )}
 
-        <div className="form__section form__section--center-aligned form__section--bottom">
-
-          <div className="form__toggle-checkbox">
-            <p className="bold">MAKE SOLUTION PUBLIC</p>
-            <label htmlFor="is_public" className="toggle form__public-checkbox" data-test-id="is-public-toggle-slider">
-              <input id="is_public" className="toggle__input" type="checkbox" {...register('is_public')} />
-              <div className="toggle__fill round" />
-            </label>
-          </div>
+        <div className="form-section form-section-center mb-0">
+          <Toggle
+            label="MAKE SOLUTION PUBLIC"
+            onClick={handleOnClickToggle}
+            isToggled={isToggled}
+          />
 
           <div className="flex flex-col items-center sm:flex-row sm:justify-center">
             <button
