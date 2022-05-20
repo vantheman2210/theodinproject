@@ -49,8 +49,15 @@ const FlagForm = ({ onSubmit, submission, userId }) => {
         </div>
         )}
 
-        <div className="form__section form__section--center-aligned">
-          <button disabled={formState.isSubmitting} className="button button--primary" type="submit" data-test-id="submit-flag-btn">Flag</button>
+        <div className="form-section form-section-center">
+          <button
+            disabled={formState.isSubmitting}
+            className="button button--primary"
+            type="submit"
+            data-test-id="submit-flag-btn"
+          >
+            Flag
+          </button>
         </div>
       </form>
     </div>

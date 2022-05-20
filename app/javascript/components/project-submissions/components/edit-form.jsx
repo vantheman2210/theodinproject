@@ -34,7 +34,14 @@ const EditForm = ({
     return (
       <div className="text-center">
         <h1 className="page-heading-title">Thanks for Updating Your Solution!</h1>
-        <button type="button" className="button button--primary" onClick={onClose} data-test-id="close-btn">Close</button>
+        <button
+          type="button"
+          className="button button--primary"
+          onClick={onClose}
+          data-test-id="close-btn"
+        >
+          Close
+        </button>
       </div>
     );
   }
@@ -96,11 +103,23 @@ const EditForm = ({
             </label>
           </div>
 
-          <div className="form__button-group">
-            <button type="submit" className="button button--danger button--medium" onClick={handleDelete} data-test-id="delete-btn">Delete</button>
-            &nbsp;
-            &nbsp;
-            <button disabled={formState.isSubmitting} type="submit" className="button button--primary button--medium" data-test-id="submit-btn">Update</button>
+          <div className="flex flex-col items-center sm:flex-row sm:justify-center">
+            <button
+              type="submit"
+              className="button button--danger sm:mr-2"
+              onClick={handleDelete}
+              data-test-id="delete-btn"
+            >
+              Delete
+            </button>
+            <button
+              disabled={formState.isSubmitting}
+              type="submit"
+              className="button button--primary mt-2 sm:mt-0"
+              data-test-id="submit-btn"
+            >
+              Update
+            </button>
           </div>
         </div>
       </form>

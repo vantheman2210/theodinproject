@@ -27,7 +27,14 @@ const CreateForm = ({ onClose, onSubmit, userId }) => {
     return (
       <div className="text-center">
         <h1 className="page-heading-title" data-test-id="success-message">Thanks for Submitting Your Solution!</h1>
-        <button type="button" className="button button--primary" onClick={onClose} data-test-id="close-btn">Close</button>
+        <button
+          type="button"
+          className="button button--primary"
+          onClick={onClose}
+          data-test-id="close-btn"
+        >
+          Close
+        </button>
       </div>
     );
   }
@@ -95,7 +102,7 @@ const CreateForm = ({ onClose, onSubmit, userId }) => {
           <button
             disabled={formState.isSubmitting}
             type="submit"
-            className="button button--primary button--medium"
+            className="button button--primary"
             data-test-id="submit-btn"
           >
             Submit
